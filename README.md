@@ -1,5 +1,6 @@
 # Sets with friends solver
 Automated solver for sets with friends! Original code skeleton and functions adapted from AceLewis.
+
 Environment that works for me:
 - Microsoft Edge browser
 - 80% magnification
