@@ -197,28 +197,6 @@ def play_step():
                     click_location(cards.index(missing_card))
                     break
 
-def test_step():
-    time.sleep(ROUND_DELAY)
-    screenie = screenshot()
-    box_dict = {}
-    # for i in range(MAX_CARDS):
-    #     card = screenie.crop(box=shift_roi(TOP_LEFT_BOX, i))
-    #     box_dict[i] = card
-    #     card.save(f'{i}.png')
-
-    box_dict = {i: screenie.crop(box=shift_roi(TOP_LEFT_BOX, i)) for i in range(MAX_CARDS)}
-
-    cards = get_cards(box_dict)
-    if not cards:
-        exit()
-    for card_1, card_2 in itertools.combinations(cards, 2):
-        missing_card = find_missing_card(card_1, card_2)
-        if missing_card in cards:
-                click_location(cards.index(card_1))
-                click_location(cards.index(card_2))
-                click_location(cards.index(missing_card))
-                break
-
 if __name__ == '__main__':
     time.sleep(0.5)
 
