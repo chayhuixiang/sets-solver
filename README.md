@@ -9,7 +9,7 @@ Environment that works for me:
 Original code file adapted from AceLewis' original solution from https://github.com/AceLewis/set-solving-bot, works with the android version of sets with friends
 
 ## hxsolver.py
-Code file that works with the browser version of Sets with friends https://setwithfriends.com/, run the code and it solves the entire board for you.
+Code file that works with the browser version of Sets with friends https://setwithfriends.com/, run the code and it solves the entire board for you. Make sure that your browser with setswithfriends is on the prev tab (ie alt-tab will bring you to the browser with sets with friends).
 
 ## pranksolver.py
 Code file that also works with the browser version of Sets with friends. Only clicks on sets upon pressing the spacebar.
